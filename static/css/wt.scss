@@ -73,7 +73,7 @@ body{
     top: 0;
     right: 0;
     background: $colorWhite;
-    padding: 35px 0 40px;
+    padding: 35px 0 20px;
 
     &:before{
         position: absolute;
@@ -168,6 +168,42 @@ body{
             &:hover{
                 text-decoration: none;
             }
+        }
+    }
+
+    .wt-footer_table{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    .wt-footer_cell{
+        display: table-cell;
+    }
+
+    .wt-container{
+        width: 960px;
+        padding: 0 0 0 170px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .wt-hide_for_mobile{
+        display: none!important;
+    }
+
+    #wt-footer{
+        .wt-container{
+            padding: 0 20px;
+        }
+
+        .wt-footer_cell{
+            display: block;
+            margin: 0 0 20px;
+        }
+
+        .wt-footer_root_link{
+            padding: 0 0 10px;
         }
     }
 }

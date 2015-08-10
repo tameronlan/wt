@@ -1,3 +1,7 @@
+$colorOrange : #ff9900;
+$colorGray : #999999;
+$colorWhite : #ffffff;
+
 /* reset */
 *{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}
 html,body{height:100%;position:relative;color:#181818;font-size:small}
@@ -6,7 +10,7 @@ ul.disc{margin:10px 0 15px}
 ul.disc li{list-style-type:disc;margin-left:30px;padding:0 0 5px}
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+hr{display:block;height:1px;border:0;border-top:1px solid $colorGray;margin:1em 0;padding:0}
 input,select{vertical-align:middle;}
 select,input,textarea{font-size:99%}
 h3{font-size:17px}
@@ -17,7 +21,7 @@ small{font-size:85%}
 strong,th{font-weight:700}
 textarea{overflow:auto;}
 label,input[type=submit]{cursor:pointer}
-p{color: #181818; padding: 0 0 15px; font-size: 11px}
+p{padding: 0 0 15px; font-size: 11px}
 .h{display:none}
 .o_h{overflow:hidden !important}
 
@@ -35,6 +39,7 @@ p{color: #181818; padding: 0 0 15px; font-size: 11px}
     display:block
 }
 
+
 @font-face {
     font-family: 'Shadow';
     src: url('../fonts/shadow_regular.eot');
@@ -44,14 +49,15 @@ p{color: #181818; padding: 0 0 15px; font-size: 11px}
 }
 
 body{
-    background: #fff;
+    background: $colorWhite;
     font: 18px/21px 'pt sans', tahoma, sans-serif;
-    color: #999999;
+    color: $colorGray;
 }
 
 .wt-container{
     max-width: 1300px;
-    margin: 0 20px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .wt-font_shadow{
@@ -66,13 +72,102 @@ body{
     left: 0;
     top: 0;
     right: 0;
+    background: $colorWhite;
+    padding: 35px 0 40px;
 
     &:before{
-
+        position: absolute;
+        left: 0;
+        top: 1px;
+        right: 0;
+        height: 8px;
+        background: $colorOrange;
+        content: '';
     }
 
     &:after{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        right: 0;
+        height: 10px;
+        background: url(../i/header_gradient.png);
+        content: '';
+    }
+
+    .wt-appstor_link{
+        float: right;
+    }
+}
+
+.wt-logo{
+    float: left;
+    width: 209px;
+    height: 55px;
+    background: url(../i/logo.png);
+}
+
+.wt-appstor_link{
+    display: block;
+    background: url(../i/sp.png);
+
+    &.wt-appstor_link{
+        background-position: 0 0;
+        width: 169px;
+        height: 50px;
+    }
+}
+
+.wt-carousel_autoloader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 4px;
+
+    .wt-carousel_autoloader_inner{
+        position: absolute;
+        background: $colorWhite;
+        top: 0;
+        left: 0;
+        bottom: 0;
 
     }
 }
-#wt-footer{}
+
+#wt-content{
+    padding: 130px 0 0;
+}
+
+#wt-footer{
+    background: $colorOrange;
+    padding: 40px 0 30px;
+
+    a{
+        color: $colorWhite;
+        font-size: 18px;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .wt-footer_link_wrapper{
+        display: block;
+    }
+
+    .wt-footer_root_link{
+        padding: 0 0 20px;
+
+        a{
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

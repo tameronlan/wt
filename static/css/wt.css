@@ -337,7 +337,7 @@ html, body {
   .wt-contact .wt-form {
     padding: 15px 0 0; }
 
-/* contacts */
+/* page */
 .wt-page {
   max-width: 600px;
   margin: 0 auto 40px;
@@ -417,6 +417,14 @@ html, body {
 
 /* end btns*/
 @media (max-width: 720px) {
+  .wt-page h1 {
+    font-size: 50px;
+    word-wrap: break-word; }
+
+  .wt-contact h2 {
+    font-size: 50px;
+    word-wrap: break-word; }
+
   .wt-hide_for_mobile {
     display: none !important; }
 

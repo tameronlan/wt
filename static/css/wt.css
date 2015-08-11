@@ -457,8 +457,8 @@ html, body {
     margin: 0 0 20px;
     max-width: 100%; }
     .wt-slider_item_img img {
-      display: inline-block;
-      width: auto; }
+      display: block;
+      margin: 0 auto; }
 
   .wt-slider_item_1 .wt-slider_item_1_description {
     text-align: center;

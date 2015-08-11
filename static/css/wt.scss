@@ -29,11 +29,12 @@ ul{
 }
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid $colorGray;margin:1em 0;padding:0}
+hr{display:block;height:1px;border:0;border-top:1px solid $colorOrange;margin:1em 0;padding:0}
 input,select{vertical-align:middle;}
 select,input,textarea{font-size:99%}
 h1{font-family:$fontShadow;font-size:100px; color: $colorOrange; line-height: 100px;}
-h2{font-family:$fontShadow;font-size:36px; color: $colorOrange; line-height: 36px;}
+h2{font-family:$fontShadow;font-size:68px; color: $colorOrange; line-height: 68px;}
+h3{font-family:$fontShadow;font-size:36px; color: $colorOrange; line-height: 36px;}
 h3{font-size:17px}
 h4{font-size:14px}
 a{color:#181818; text-decoration: none}
@@ -309,6 +310,107 @@ html, body{
     }
 }
 /* end slider styles */
+
+/* contacts */
+.wt-contact{
+    max-width: 680px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+
+    .wt-form{
+        padding: 15px 0 0;
+    }
+}
+/* contacts */
+.wt-page{
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+
+    h1{
+        font-size: 80px;
+    }
+
+    p{
+        padding: 0 0 20px;
+    }
+
+    hr{
+        margin: 15px 0 45px;
+    }
+}
+
+/* forms */
+.wt-form{}
+.wt-label{
+    display: block;
+    padding: 7px;
+    color: $colorOrange;
+}
+.wt-field{
+    margin: 0 0 15px;
+}
+.wt-data{padding: 0 22px 0 0;}
+.wt-input{
+    padding: 10px 10px;
+    height: 26px;
+    border: 1px solid $colorGray;
+    width: 100%;
+    transition: border-color .1s linear;
+    border-radius: 4px;
+}
+.wt-textarea{
+    width: 100%;
+    padding: 10px;
+    height: 26px;
+    border: 1px solid $colorGray;
+    min-height: 204px;
+    resize: vertical;
+    transition: border-color .1s linear;
+    border-radius: 4px;
+}
+.wt-select{
+    width: 100%;
+    padding: 10px;
+    height: 26px;
+    border: 1px solid $colorGray;
+    resize-x: none;
+    transition: border-color .1s linear;
+    border-radius: 4px;
+}
+.wt-input:focus,
+.wt-textarea:focus,
+.wt-select:focus{
+    border-color: $colorOrange;
+}
+.wt-helper{
+    font-size: 13px;
+    padding: 5px 0 0;
+    text-align: right;
+    margin: 0 -20px 0 0;
+}
+/* end forms */
+
+/* btns*/
+.wt-btn{
+    display: inline-block;
+    background: $colorOrange;
+    color: $colorWhite;
+    font: 600 20px/30px $fontOsans;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .05s linear;
+
+    &:hover{
+        background: lighten($colorOrange, 10);
+    }
+
+    &:active{
+        background: darken($colorOrange, 20);
+    }
+}
+/* end btns*/
 
 @media (max-width: 1200px) {
 

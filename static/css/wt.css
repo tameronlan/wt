@@ -455,7 +455,7 @@ html, body {
     float: none;
     text-align: center;
     margin: 0 0 20px;
-    max-width: none; }
+    max-width: 100%; }
     .wt-slider_item_img img {
       display: inline-block;
       width: auto; }
@@ -478,16 +478,17 @@ html, body {
     display: none !important; } }
 @media (max-width: 450px) {
   .wt-page h1 {
-    font-size: 30px;
-    line-height: 35px; }
+    font-size: 40px;
+    line-height: 45px; }
 
   .wt-contact h2 {
-    font-size: 30px;
-    line-height: 35px; }
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0 0 10px; }
 
   h1 {
-    font-size: 30px;
-    line-height: 35px; }
+    font-size: 40px;
+    line-height: 45px; }
 
   .wt-page hr {
     margin: 15px 0 25px; } }

@@ -343,7 +343,8 @@ html, body {
   margin: 0 auto 40px;
   padding: 0 20px; }
   .wt-page h1 {
-    font-size: 80px; }
+    font-size: 80px;
+    line-height: 80px; }
   .wt-page p {
     padding: 0 0 20px; }
   .wt-page hr {
@@ -419,10 +420,12 @@ html, body {
 @media (max-width: 720px) {
   .wt-page h1 {
     font-size: 50px;
+    line-height: 60px;
     word-wrap: break-word; }
 
   .wt-contact h2 {
     font-size: 50px;
+    line-height: 60px;
     word-wrap: break-word; }
 
   .wt-hide_for_mobile {

@@ -145,9 +145,37 @@ wt.slider = new function(){
         } else {
             var $nextSlide = $(slider.$items.get(index));
             var $prevSlide = $(slider.$items.get(slider.curI));
+            var $prevSlideWidth = $prevSlide.outerWidth();
+            var animateTime = 300;
 
-            $prevSlide.removeClass('wt-slider_item_current');
-            $nextSlide.addClass('wt-slider_item_current');
+            $nextSlide.css({
+                width : $prevSlideWidth,
+                opacity : .1,
+                left: index < slider.curI ? wt.windowWidth + 200 : $prevSlideWidth - 200
+            });
+
+            $prevSlide.stop().animate({
+                opacity : 0
+            }, animateTime);
+
+            $nextSlide.stop().animate({
+                opacity : 1,
+                left : 0
+            }, animateTime);
+
+            setTimeout(function(){
+                $prevSlide.removeClass('wt-slider_item_current');
+                $nextSlide.addClass('wt-slider_item_current');
+
+                $nextSlide.css({
+                    'width': 'auto'
+                });
+
+                $prevSlide.css({
+                    opacity: 1
+                });
+            }, animateTime);
+
 
             slider.curI = index;
         }

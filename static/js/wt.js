@@ -151,7 +151,6 @@ wt.slider = new function(){
             $nextSlide.css({
                 width : $prevSlideWidth,
                 opacity : .1,
-                opacity : .1,
                 left: index > slider.curI ? wt.windowWidth + 200 : -$prevSlideWidth - 200
             });
 

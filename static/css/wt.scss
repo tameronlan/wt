@@ -691,7 +691,7 @@ html, body{
 
 @media (max-width: 1000px) {
     .wt-slider_pointer .wt-slider_pointer_helper{
-        display: none;
+        display: none!important;
     }
 }
 
@@ -860,7 +860,7 @@ html, body{
         }
 
         .wt-slider_item_1_description{
-            margin-bottom: 35px;
+            margin-bottom: 15px;
         }
 
         .wt-slider_item_img{

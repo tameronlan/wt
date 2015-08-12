@@ -565,7 +565,7 @@ html, body {
     left: -95px; } }
 @media (max-width: 1000px) {
   .wt-slider_pointer .wt-slider_pointer_helper {
-    display: none; } }
+    display: none !important; } }
 @media (max-width: 720px) {
   .wt-page h1 {
     font-size: 50px;
@@ -676,7 +676,7 @@ html, body {
     font-size: 80px;
     line-height: 80px; }
   .wt-slider_item_1 .wt-slider_item_1_description {
-    margin-bottom: 35px; }
+    margin-bottom: 15px; }
   .wt-slider_item_1 .wt-slider_item_img {
     max-width: 110%;
     left: -110%; }

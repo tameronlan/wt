@@ -269,7 +269,8 @@ html, body {
     background: #ffffff;
     top: 0;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+      opacity: 0;}
 
 #wt-footer {
   background: #ff9900;

@@ -21,13 +21,13 @@
         <div id="wt-content">
             <div class="wt-container">
                 <div class="wt-slider_wrapper">
-                    <div class="wt-slider_pointer wt-slider_pointer_left"></div>
-                    <div class="wt-slider_pointer wt-slider_pointer_right">
+                    <div class="wt-slider_pointer wt-slider_pointer_left" onclick="wt.slider.prev(true);"></div>
+                    <div class="wt-slider_pointer wt-slider_pointer_right" onclick="wt.slider.next(true);">
                         <div class="wt-slider_pointer_helper"></div>
                     </div>
                     <div class="wt-slider_inner">
                         <!-- slider step 1 -->
-                        <div class="wt-slider_item wt-slider_item_current wt-slider_item_1">
+                        <div class="wt-slider_item wt-slider_item_1">
                             <h1>ХОЧУ ОБЩАТЬСЯ!</h1>
                             <div class="wt-slider_item_1_description">Наконец-то! Реально живое и бесплатное общение на вашем телефоне!</div>
                             <div class="wt-slider_item_content">
@@ -191,5 +191,10 @@
         </div>
 
         <div id="node-heap"></div>
+
+        <script>
+            wt.init();
+            wt.slider.init();
+        </script>
     </body>
 </html>

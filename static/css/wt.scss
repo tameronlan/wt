@@ -641,6 +641,9 @@ html, body{
 }
 
 @media (max-width: 720px) {
+    html{
+        overflow: hidden;
+    }
     .wt-page{
         h1{
             font-size: 50px;

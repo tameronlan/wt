@@ -233,7 +233,7 @@ html, body {
   #wt-header:before {
     position: absolute;
     left: 0;
-    top: 1px;
+    top: 0;
     right: 0;
     height: 8px;
     background: #ff9900;

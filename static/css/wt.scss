@@ -295,7 +295,7 @@ html, body{
 .wt-slider_radios{
     position: absolute;
     text-align: center;
-    top: 625px;
+    bottom: 20px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -688,6 +688,13 @@ html, body{
     }
 }
 
+
+@media (max-width: 1000px) {
+    .wt-slider_pointer .wt-slider_pointer_helper{
+        display: none;
+    }
+}
+
 @media (max-width: 720px) {
     .wt-page{
         h1{
@@ -842,6 +849,37 @@ html, body{
 
         b{
             font-size: 26px;
+        }
+    }
+}
+
+@media (max-height: 700px) {
+    .wt-slider_item_1 {
+        h1{
+            padding-top: 15px;
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        .wt-slider_item_1_description{
+            margin-bottom: 15px;
+        }
+
+        .wt-slider_item_img{
+            max-width: 110%;
+            left: -110%;
+        }
+    }
+
+    .wt-slider_wrapper{
+        min-height: 520px;
+    }
+
+    .wt-slider_item_7 .wt-slider_item_img{
+        max-height: 520px;
+
+        img{
+            max-height: 520px;
         }
     }
 }

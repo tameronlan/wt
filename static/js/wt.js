@@ -146,7 +146,7 @@ wt.slider = new function(){
             var $nextSlide = $(slider.$items.get(index));
             var $prevSlide = $(slider.$items.get(slider.curI));
             var $prevSlideWidth = $prevSlide.outerWidth();
-            var animateTime = 300;
+            var animateTime = 400;
 
             $nextSlide.css({
                 width : $prevSlideWidth,

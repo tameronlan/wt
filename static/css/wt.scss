@@ -444,12 +444,12 @@ html, body{
     .wt-slider_item_num{
         display: block;
         width: 106px;
-        height: 107px;
-        text-align: center;
-        font: 72px/106px $fontShadow;
-        color: $colorOrange;
-        background: url(../i/sp.png) -298px 0;
         margin: 0 auto 30px 140px;
+
+        img{
+            display: block;
+            max-width: 100%;
+        }
     }
 }
 .wt-slider_item_current{position: relative; left: 0; display: block;}
@@ -753,12 +753,19 @@ html, body{
         .wt-slider_item_num{
             float: left;
             margin: 0 0 20px 0;
+            width: 60px;
         }
 
         h3{
-            margin-left: 130px;
-            padding: 10px 0 0;
+            margin-left: 80px;
+            padding: 5px 0 0;
             margin-right: -10px;
+            font-size: 20px;
+            line-height: 26px;
+
+            b{
+                font-size: 26px;
+            }
         }
     }
 
@@ -835,21 +842,12 @@ html, body{
     }
 
     h1{
-        font-size: 40px;
-        line-height: 45px;
+        font-size: 40px!important;
+        line-height: 45px!important;
     }
 
     .wt-page hr{
         margin: 15px 0 25px;
-    }
-
-    .wt-slider_item h3{
-        font-size: 20px;
-        line-height: 26px;
-
-        b{
-            font-size: 26px;
-        }
     }
 }
 
@@ -862,7 +860,7 @@ html, body{
         }
 
         .wt-slider_item_1_description{
-            margin-bottom: 15px;
+            margin-bottom: 35px;
         }
 
         .wt-slider_item_img{

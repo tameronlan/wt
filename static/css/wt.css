@@ -384,12 +384,10 @@ html, body {
   .wt-slider_item .wt-slider_item_num {
     display: block;
     width: 106px;
-    height: 107px;
-    text-align: center;
-    font: 72px/106px "Shadow", arial, sans-serif;
-    color: #ff9900;
-    background: url(../i/sp.png) -298px 0;
     margin: 0 auto 30px 140px; }
+    .wt-slider_item .wt-slider_item_num img {
+      display: block;
+      max-width: 100%; }
 
 .wt-slider_item_current {
   position: relative;
@@ -607,11 +605,16 @@ html, body {
     display: block; }
     .wt-slider_item .wt-slider_item_num {
       float: left;
-      margin: 0 0 20px 0; }
+      margin: 0 0 20px 0;
+      width: 60px; }
     .wt-slider_item h3 {
-      margin-left: 130px;
-      padding: 10px 0 0;
-      margin-right: -10px; }
+      margin-left: 80px;
+      padding: 5px 0 0;
+      margin-right: -10px;
+      font-size: 20px;
+      line-height: 26px; }
+      .wt-slider_item h3 b {
+        font-size: 26px; }
 
   .wt-slider_item_img {
     float: none;
@@ -662,24 +665,18 @@ html, body {
     margin: 0 0 10px; }
 
   h1 {
-    font-size: 40px;
-    line-height: 45px; }
+    font-size: 40px !important;
+    line-height: 45px !important; }
 
   .wt-page hr {
-    margin: 15px 0 25px; }
-
-  .wt-slider_item h3 {
-    font-size: 20px;
-    line-height: 26px; }
-    .wt-slider_item h3 b {
-      font-size: 26px; } }
+    margin: 15px 0 25px; } }
 @media (max-height: 700px) {
   .wt-slider_item_1 h1 {
     padding-top: 15px;
     font-size: 80px;
     line-height: 80px; }
   .wt-slider_item_1 .wt-slider_item_1_description {
-    margin-bottom: 15px; }
+    margin-bottom: 35px; }
   .wt-slider_item_1 .wt-slider_item_img {
     max-width: 110%;
     left: -110%; }
